@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The 2025 OIG Podiatry Audit Reports: What Every Independent Podiatrist Must Know Now</title>
+  <meta name="description" content="The OIG released two podiatry billing audit reports in December 2025 showing 44-49% non-compliance rates. Learn what they found and what to do immediately to protect your Medicare billing." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --blue-deep:#1B3A6B;--blue-mid:#2756A8;--blue-light:#EEF4FF;--blue-pale:#F4F8FF;
+      --gold:#E8A020;--gold-hover:#CF8C14;--gold-pale:#FFF8EC;
+      --white:#FFFFFF;--gray-100:#F7F9FC;--gray-200:#EDF0F5;--gray-400:#9BA8BD;--gray-600:#5C6A85;--gray-800:#1E2B42;
+      --text:#1E2B42;--text-light:#5C6A85;--red:#C0392B;--red-pale:#FFF0F0;
+      --shadow-sm:0 2px 8px rgba(27,58,107,0.08);--shadow-md:0 8px 32px rgba(27,58,107,0.12);--shadow-lg:0 20px 60px rgba(27,58,107,0.18);
+      --radius-sm:8px;--radius-md:16px;--radius-lg:28px;
+      --font-display:'Playfair Display',Georgia,serif;--font-body:'Plus Jakarta Sans',sans-serif;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--font-body);color:var(--text);background:var(--white);-webkit-font-smoothing:antialiased}
+    .container{max-width:1160px;margin:0 auto;padding:0 2rem}
+
+    /* ALERT */
+    .alert-strip{background:var(--red);padding:10px 2rem;text-align:center;font-size:13px;font-weight:600;color:#fff}
+    .alert-strip strong{color:#FFD580}
+
+    /* NAV */
+    nav{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.97);backdrop-filter:blur(14px);border-bottom:1px solid rgba(27,58,107,.07)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
+    .nav-logo{font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--blue-deep);text-decoration:none;display:flex;align-items:center;gap:10px}
+    .nav-logo-mark{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--blue-mid),var(--blue-deep));display:flex;align-items:center;justify-content:center;font-size:17px;color:white}
+    .nav-links{display:flex;gap:28px;align-items:center}
+    .nav-links a{font-size:14px;font-weight:500;color:var(--gray-600);text-decoration:none;transition:color .2s}
+    .nav-links a:hover{color:var(--blue-deep)}
+    .btn-nav{background:var(--gold);color:white!important;font-weight:700;font-size:14px;padding:11px 22px;border-radius:var(--radius-sm);text-decoration:none;white-space:nowrap;transition:background .2s,transform .15s;box-shadow:0 3px 12px rgba(232,160,32,.3)}
+    .btn-nav:hover{background:var(--gold-hover);transform:translateY(-1px)}
+
+    /* POST HERO */
+    .post-hero{background:var(--blue-pale);padding:60px 2rem 0;position:relative;overflow:hidden}
+    .post-hero::before{content:'';position:absolute;top:-100px;right:-150px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(39,86,168,.07) 0%,transparent 65%)}
+    .post-hero-inner{max-width:800px;margin:0 auto;position:relative;z-index:1;padding-bottom:48px}
+    .breadcrumb{font-size:13px;color:var(--gray-400);margin-bottom:20px}
+    .breadcrumb a{color:var(--gray-400);text-decoration:none}
+    .breadcrumb a:hover{color:var(--blue-mid)}
+    .breadcrumb span{margin:0 8px}
+    .post-tag{display:inline-flex;align-items:center;font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:5px 14px;border-radius:100px;margin-bottom:18px}
+    .tag-red{background:var(--red-pale);color:var(--red)}
+    .tag-gold{background:var(--gold-pale);color:var(--gold-hover)}
+    .tag-blue{background:var(--blue-light);color:var(--blue-mid)}
+    .post-hero h1{font-family:var(--font-display);font-size:clamp(2rem,4vw,2.9rem);color:var(--blue-deep);line-height:1.15;margin-bottom:18px}
+    .post-meta{font-size:13px;color:var(--gray-400);display:flex;gap:16px;flex-wrap:wrap}
+    .post-meta span{display:flex;align-items:center;gap:5px}
+
+    /* HERO IMAGE */
+    .post-hero-img{width:100%;max-width:800px;margin:0 auto;display:block}
+    .post-hero-img img{width:100%;height:380px;object-fit:cover;border-radius:var(--radius-lg) var(--radius-lg) 0 0;display:block;box-shadow:var(--shadow-lg)}
+
+    /* ARTICLE */
+    .article-wrap{max-width:800px;margin:0 auto;padding:52px 2rem 80px;display:grid;grid-template-columns:1fr 260px;gap:52px;align-items:start}
+    .article-body{}
+    .post-lead{font-size:1.05rem;line-height:1.77;color:var(--text-light);margin-bottom:28px;padding:20px 24px;background:var(--blue-pale);border-left:3px solid var(--blue-mid);border-radius:0 var(--radius-sm) var(--radius-sm) 0}
+    h2{font-family:var(--font-display);font-size:1.65rem;color:var(--blue-deep);margin:36px 0 14px;line-height:1.2}
+    h3{font-size:1rem;font-weight:700;color:var(--blue-deep);margin:24px 0 10px}
+    p{font-size:.935rem;line-height:1.78;color:var(--text-light);margin-bottom:16px}
+    ul,ol{margin:0 0 18px 1.4rem;font-size:.935rem;color:var(--text-light)}
+    li{margin-bottom:8px;line-height:1.65}
+    strong{color:var(--text);font-weight:700}
+
+    .callout{background:var(--gray-100);border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:20px 24px;margin:24px 0}
+    .callout-label{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-hover);margin-bottom:10px}
+    .callout p{font-size:.875rem;margin-bottom:0;color:var(--gray-600)}
+    .callout p+p{margin-top:10px}
+
+    .callout-red{background:var(--red-pale);border-color:rgba(192,57,43,.15)}
+    .callout-red .callout-label{color:var(--red)}
+
+    /* SIDEBAR */
+    .article-sidebar{position:sticky;top:88px}
+    .sidebar-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-md);overflow:hidden;box-shadow:var(--shadow-sm)}
+    .sidebar-accent{height:4px;background:linear-gradient(90deg,var(--gold),var(--blue-mid))}
+    .sidebar-body{padding:22px}
+    .sidebar-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-400);margin-bottom:10px}
+    .sidebar-price{font-family:var(--font-display);font-size:2.4rem;font-weight:700;color:var(--blue-deep);line-height:1}
+    .sidebar-price sup{font-size:1.2rem;vertical-align:top;margin-top:6px}
+    .sidebar-freq{font-size:12px;color:var(--text-light);margin:4px 0 16px}
+    .sidebar-feats{list-style:none;margin:0 0 18px;display:flex;flex-direction:column;gap:9px}
+    .sidebar-feats li{display:flex;gap:9px;align-items:flex-start;font-size:.8rem;color:var(--gray-600);line-height:1.5}
+    .sidebar-feats li::before{content:'✓';width:18px;height:18px;border-radius:50%;background:var(--gold-pale);color:var(--gold-hover);font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+    .sidebar-divider{height:1px;background:var(--gray-200);margin:16px 0}
+    .btn-sidebar{display:block;width:100%;background:var(--gold);color:white;text-align:center;font-weight:700;font-size:.9rem;padding:13px;border-radius:var(--radius-sm);text-decoration:none;box-shadow:0 3px 14px rgba(232,160,32,.35);transition:background .2s,transform .15s}
+    .btn-sidebar:hover{background:var(--gold-hover);transform:translateY(-1px)}
+    .sidebar-note{text-align:center;font-size:11px;color:var(--gray-400);margin-top:10px}
+
+    /* RELATED */
+    .related-posts{max-width:800px;margin:0 auto;padding:0 2rem 80px}
+    .related-label{font-family:var(--font-display);font-size:1.5rem;color:var(--blue-deep);margin-bottom:22px}
+    .related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .related-card{background:var(--gray-100);border-radius:var(--radius-md);padding:20px;text-decoration:none;border:1px solid transparent;transition:border-color .2s,box-shadow .2s,transform .2s}
+    .related-card:hover{border-color:rgba(39,86,168,.18);box-shadow:var(--shadow-sm);transform:translateY(-2px)}
+    .related-tag{font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:4px 10px;border-radius:100px;display:inline-block;margin-bottom:10px}
+    .related-card h3{font-family:var(--font-display);font-size:1rem;color:var(--blue-deep);line-height:1.3;margin-bottom:6px}
+    .related-card p{font-size:.8rem;color:var(--text-light);line-height:1.6}
+
+    /* CTA BANNER */
+    .cta-banner{background:var(--blue-deep);padding:60px 2rem;text-align:center}
+    .cta-banner h2{font-family:var(--font-display);font-size:clamp(1.7rem,3vw,2.2rem);color:white;margin-bottom:12px}
+    .cta-banner p{font-size:.95rem;color:rgba(255,255,255,.65);max-width:480px;margin:0 auto 26px;line-height:1.7}
+    .btn-cta{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:white;font-weight:700;font-size:15px;padding:14px 28px;border-radius:var(--radius-sm);text-decoration:none;box-shadow:0 4px 18px rgba(232,160,32,.38);transition:background .2s,transform .15s}
+    .btn-cta:hover{background:var(--gold-hover);transform:translateY(-2px)}
+
+    /* FOOTER */
+    footer{background:var(--gray-800);color:rgba(255,255,255,.55);padding:40px 2rem 28px}
+    .footer-inner{max-width:1160px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:24px}
+    .footer-brand{font-family:var(--font-display);font-size:1rem;color:white;margin-bottom:8px}
+    .footer-disclaimer{font-size:.7rem;max-width:420px;line-height:1.6}
+    .footer-links{display:flex;gap:20px;flex-wrap:wrap}
+    .footer-links a{font-size:12px;color:rgba(255,255,255,.5);text-decoration:none}
+    .footer-links a:hover{color:white}
+    .footer-bottom{max-width:1160px;margin:20px auto 0;padding-top:18px;border-top:1px solid rgba(255,255,255,.07);font-size:11px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+    @media(max-width:900px){.article-wrap{grid-template-columns:1fr}.article-sidebar{display:none}.related-grid{grid-template-columns:1fr}}
+    @media(max-width:640px){.nav-links{display:none}.footer-inner{flex-direction:column}.footer-bottom{flex-direction:column}}
+  </style>
+</head>
+<body>
+
+<div class="alert-strip">⚠ <strong>ENFORCEMENT ALERT:</strong> OIG released two podiatry billing audits in Dec 2025 — non-compliance rates of 44–49%.</div>
+
+<nav>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo"><div class="nav-logo-mark">🦶</div>PodiatryBillingClarity</a>
+      <div class="nav-links">
+        <a href="/#features">What You Get</a><a href="/#risk-codes">Risk Codes</a>
+        <a href="/#how-it-works">How It Works</a><a href="/#faq">FAQ</a>
+        <a href="/blog.html">Resources</a>
+      </div>
+      <a href="/#pricing" class="btn-nav">Subscribe — $247/mo</a>
+    </div>
+  </div>
+</nav>
+
+<div class="post-hero">
+  <div class="post-hero-inner">
+    <div class="breadcrumb"><a href="/">Home</a><span>›</span><a href="/blog.html">Resources</a><span>›</span>OIG Enforcement</div>
+    <span class="post-tag tag-red">OIG Enforcement</span>
+    <h1>The 2025 OIG Podiatry Audit Reports: What Every Independent Podiatrist Must Know Now</h1>
+    <div class="post-meta">
+      <span>📅 April 2026</span>
+      <span>⏱ 8 min read</span>
+      <span>✍ PodiatryBillingClarity.com</span>
+    </div>
+  </div>
+</div>
+<div class="post-hero-img">
+  <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80&auto=format&fit=crop" alt="Medicare audit document review medical billing compliance podiatry" loading="eager" />
+</div>
+
+<div class="article-wrap">
+  <div class="article-body">
+
+    <p class="post-lead">In December 2025, the Office of Inspector General released two separate audit reports on Medicare payments for podiatric services. The findings were stark: non-compliance rates of 44% and 49% respectively. If you bill Medicare as a podiatrist, these reports are the most important documents you should read this year — and act on immediately.</p>
+
+    <h2>What the OIG Reports Found</h2>
+    <p>The U.S. Department of Health and Human Services Office of Inspector General released two reports in December 2025, both examining whether Medicare payments for podiatric services complied with Medicare requirements. The findings were consistent across both reports: nearly half of all podiatry claims reviewed did not meet documentation or medical necessity requirements.</p>
+    <p>The OIG's primary findings centered on four categories of non-compliance:</p>
+    <ul>
+      <li><strong>Insufficient documentation of systemic conditions</strong> for routine foot care services (CPT 11055–11057 and 11720–11721)</li>
+      <li><strong>Missing or inadequate Class Finding documentation</strong> — the specific clinical criteria that make routine foot care a Medicare-covered benefit</li>
+      <li><strong>Medical necessity not established</strong> in the medical record at the time of service</li>
+      <li><strong>Lack of qualifying diagnosis linkage</strong> between the patient's systemic condition and the foot care services provided</li>
+    </ul>
+
+    <div class="callout callout-red">
+      <div class="callout-label">Key Finding</div>
+      <p>The OIG identified tens of millions of dollars in improper Medicare payments across both reports. When two reports covering the same specialty come out in the same month with similar findings, enforcement action follows. This is the OIG signaling an enforcement priority — not just a policy observation.</p>
+    </div>
+
+    <h2>Why Podiatrists Are in the Crosshairs</h2>
+    <p>Independent podiatrists face a structural compliance challenge that most other medical specialties don't: their highest-volume Medicare services (routine foot care) are only covered under very specific conditions that many practices don't document correctly.</p>
+    <p>Medicare does not cover routine foot care — trimming nails, removing corns and calluses — as a basic benefit. It only covers these services when a patient has a specific systemic condition that creates medical necessity. These are called "Class Findings," and they include conditions like diabetes mellitus with peripheral neuropathy, peripheral arterial disease, and chronic thrombophlebitis, among others.</p>
+    <p>The documentation requirement is two-part: you must establish that the patient has the qualifying systemic condition, AND you must document that the systemic condition creates a risk that makes routine foot care medically necessary for this patient. Most practices document the first part. Many miss the second.</p>
+
+    <h2>The Class Finding Documentation Problem</h2>
+    <p>The most common audit failure in both OIG reports was inadequate Class Finding documentation. Here's what sufficient documentation looks like versus what auditors commonly find:</p>
+
+    <h3>What auditors commonly find (insufficient):</h3>
+    <ul>
+      <li>A notation of "diabetes" in the problem list with no link to foot care necessity</li>
+      <li>A qualifying diagnosis code on the claim without corresponding documentation in the visit note</li>
+      <li>"Routine foot care per patient request" as the only documentation of necessity</li>
+      <li>Physical examination findings without the systemic condition linkage statement</li>
+    </ul>
+
+    <h3>What sufficient documentation looks like:</h3>
+    <ul>
+      <li>Patient's diagnosis of Type 2 diabetes mellitus with peripheral neuropathy (documented in current visit note)</li>
+      <li>Clinical notation that the patient's systemic condition creates a risk of infection or serious complication if foot care is performed by a non-professional</li>
+      <li>Specific Class Finding cited (e.g., "Class B-1: Diabetes mellitus with peripheral sensory neuropathy")</li>
+      <li>Physical examination findings consistent with the systemic condition (e.g., diminished sensation on monofilament testing)</li>
+    </ul>
+
+    <h2>What the APMA Said in Response</h2>
+    <p>The American Podiatric Medical Association issued a formal response to the December 2025 OIG reports, acknowledging the compliance gaps identified and urging member practices to review their documentation protocols. The APMA response highlighted the complexity of Class Finding requirements as a root cause and recommended members review CMS's routine foot care LCD documentation requirements.</p>
+    <p>The APMA response is notable because it signals that this issue is not going away. When the specialty's primary professional association is formally responding to OIG findings, practices that don't take action are taking a calculated risk.</p>
+
+    <h2>What This Means for Enforcement in 2026</h2>
+    <p>OIG audit reports have a predictable lifecycle. The report identifies a problem. Enforcement follows. The typical timeline from report publication to increased audit activity is 6–18 months. That places heightened podiatry audit activity squarely in 2026 and 2027.</p>
+    <p>For independent practices, the risk is particularly acute because:</p>
+    <ul>
+      <li>MAC automated systems flag statistical outliers — if your billing patterns for 11055–11057 diverge from peers, you're already visible</li>
+      <li>Pre-payment reviews can be initiated without notice, creating cash flow disruption before any formal audit</li>
+      <li>Extrapolation — where auditors apply error rates from a sample to your entire billing history — can create massive repayment liability from a relatively small audit sample</li>
+      <li>OIG exclusion from Medicare, while rare, is a career-ending outcome that follows individual physicians, not just practice entities</li>
+    </ul>
+
+    <div class="callout">
+      <div class="callout-label">Action Priority</div>
+      <p>Conduct a self-audit of your last 90 days of 11055–11057 and 11720–11721 claims. Pull 20 random charts and verify that each one has: (1) a documented qualifying systemic condition in the visit note — not just the problem list, (2) a specific Class Finding documented or referenced, and (3) a statement linking the systemic condition to the medical necessity of professional foot care for this patient.</p>
+    </div>
+
+    <h2>The Three Immediate Steps Every Podiatrist Should Take</h2>
+    <h3>Step 1: Audit your documentation template</h3>
+    <p>Your EHR template for routine foot care visits should prompt you to document the Class Finding and the systemic condition linkage, not just the procedure performed. If it doesn't, modify it before your next patient encounter. This is a technology fix that takes 30 minutes and protects your entire Medicare billing stream.</p>
+    <h3>Step 2: Educate your billing staff</h3>
+    <p>Your biller can code a claim perfectly and still have it fail an audit because the underlying chart note is insufficient. Your billing staff needs to know that for 11055–11057 and 11720–11721 claims, they should flag any chart note that doesn't explicitly reference the patient's qualifying systemic condition.</p>
+    <h3>Step 3: Establish a monthly compliance review protocol</h3>
+    <p>Pick the first Monday of every month. Pull five charts from the prior month's foot care claims. Verify the documentation against the Class Finding requirements. This takes 20 minutes and creates a defensible record of ongoing compliance effort.</p>
+
+    <p style="font-size:.82rem;color:var(--gray-400);margin-top:32px;padding-top:20px;border-top:1px solid var(--gray-200)"><em>Disclaimer: This article provides general compliance information for educational purposes only. It does not constitute legal advice. Consult a qualified healthcare attorney for advice specific to your practice situation.</em></p>
+  </div>
+
+  <!-- SIDEBAR -->
+  <aside class="article-sidebar">
+    <div class="sidebar-card">
+      <div class="sidebar-accent"></div>
+      <div class="sidebar-body">
+        <div class="sidebar-label">Monthly Compliance Plan</div>
+        <div class="sidebar-price"><sup>$</sup>247</div>
+        <div class="sidebar-freq">per month · cancel anytime</div>
+        <ul class="sidebar-feats">
+          <li>LCD update monitoring</li>
+          <li>OIG audit priority briefing</li>
+          <li>CPT code change alerts</li>
+          <li>Documentation requirements</li>
+          <li>One action item per report</li>
+        </ul>
+        <div class="sidebar-divider"></div>
+        <a href="/#pricing" class="btn-sidebar">Subscribe Now</a>
+        <div class="sidebar-note">🔒 Secure via Stripe</div>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<!-- RELATED -->
+<div class="related-posts">
+  <div class="related-label">Related articles</div>
+  <div class="related-grid">
+    <a href="routine-foot-care-billing-rules.html" class="related-card">
+      <span class="related-tag tag-gold">LCD Requirements</span>
+      <h3>Routine Foot Care Medicare Billing Rules: CPT 11055–11057</h3>
+      <p>The complete guide to Class Finding documentation for routine foot care claims.</p>
+    </a>
+    <a href="podiatry-medicare-compliance-checklist.html" class="related-card">
+      <span class="related-tag tag-gold">Self-Audit</span>
+      <h3>Podiatry Medicare Compliance Self-Audit Checklist</h3>
+      <p>12 things to review before the OIG finds them first. Takes two hours quarterly.</p>
+    </a>
+  </div>
+</div>
+
+<div class="cta-banner">
+  <h2>Know what changed before the audit arrives</h2>
+  <p>Monthly compliance intelligence for independent podiatrists. $247/month — cancel anytime.</p>
+  <a href="/#pricing" class="btn-cta">Subscribe to PodiatryBillingClarity <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div><div class="footer-brand">🦶 PodiatryBillingClarity</div><div class="footer-disclaimer">General compliance information only. Not legal advice. © 2026 PodiatryBillingClarity.com</div></div>
+    <div class="footer-links"><a href="/">Home</a><a href="/blog.html">Blog</a><a href="/#pricing">Subscribe</a><a href="mailto:hello@podiatrybillingclarity.com">Contact</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 PodiatryBillingClarity.com</span><span>Not affiliated with OIG, CMS, APMA, or any government agency.</span></div>
+</footer>
+</body>
+</html>
