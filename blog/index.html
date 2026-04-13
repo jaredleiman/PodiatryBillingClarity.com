@@ -1,1 +1,356 @@
-test content
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Podiatry Medicare Compliance Resources — PodiatryBillingClarity</title> 
+  <meta name="description" content="Expert guidance on Medicare billing compliance for independent podiatrists. OIG audit priorities, LCD updates, CPT code changes, and documentation requirements."/>
+  <link rel="canonical" href="https://podiatrybillingclarity.com/blog/"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --blue-deep:#1B3A6B;--blue-mid:#2756A8;--blue-light:#EEF4FF;--blue-pale:#F4F8FF;
+      --gold:#E8A020;--gold-hover:#CF8C14;--gold-pale:#FFF8EC;
+      --white:#FFFFFF;--gray-100:#F7F9FC;--gray-200:#EDF0F5;--gray-400:#9BA8BD;--gray-600:#5C6A85;--gray-800:#1E2B42;
+      --text:#1E2B42;--text-light:#5C6A85;--red:#C0392B;--red-pale:#FFF0F0;
+      --shadow-sm:0 2px 8px rgba(27,58,107,0.08);--shadow-md:0 8px 32px rgba(27,58,107,0.12);--shadow-lg:0 20px 60px rgba(27,58,107,0.18);
+      --radius-sm:8px;--radius-md:16px;--radius-lg:28px;
+      --font-display:'Playfair Display',Georgia,serif;--font-body:'Plus Jakarta Sans',sans-serif;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--font-body);color:var(--text);background:var(--white);-webkit-font-smoothing:antialiased}
+    .container{max-width:1160px;margin:0 auto;padding:0 2rem}
+    a{text-decoration:none;color:inherit}
+
+    /* ALERT */
+    .alert-strip{background:var(--red);padding:10px 2rem;text-align:center;font-size:13px;font-weight:600;color:#fff}
+    .alert-strip strong{color:#FFD580}
+
+    /* NAV */
+    nav{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.97);backdrop-filter:blur(14px);border-bottom:1px solid rgba(27,58,107,.07)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
+    .nav-logo{font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--blue-deep);text-decoration:none;display:flex;align-items:center;gap:10px}
+    .nav-logo-mark{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--blue-mid),var(--blue-deep));display:flex;align-items:center;justify-content:center;font-size:17px;color:white}
+    .nav-links{display:flex;gap:28px;align-items:center}
+    .nav-links a{font-size:14px;font-weight:500;color:var(--gray-600);text-decoration:none;transition:color .2s}
+    .nav-links a:hover{color:var(--blue-deep)}
+    .btn-nav{background:var(--gold);color:white!important;font-weight:700;font-size:14px;padding:11px 22px;border-radius:var(--radius-sm);text-decoration:none;white-space:nowrap;transition:background .2s,transform .15s;box-shadow:0 3px 12px rgba(232,160,32,.3)}
+    .btn-nav:hover{background:var(--gold-hover);transform:translateY(-1px)}
+
+    /* BLOG HERO */
+    .blog-hero{background:var(--blue-pale);padding:64px 2rem 52px;border-bottom:1px solid var(--gray-200)}
+    .blog-hero-inner{max-width:1160px;margin:0 auto}
+    .blog-hero-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue-mid);margin-bottom:14px}
+    .blog-hero h1{font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);color:var(--blue-deep);line-height:1.15;margin-bottom:14px}
+    .blog-hero p{font-size:.95rem;color:var(--text-light);max-width:560px;line-height:1.75}
+
+    /* MAIN LAYOUT */
+    .blog-wrap{max-width:1160px;margin:0 auto;padding:56px 2rem 80px;display:grid;grid-template-columns:1fr 300px;gap:52px;align-items:start}
+
+    /* POST GRID */
+    .post-grid{display:flex;flex-direction:column;gap:28px}
+    .post-card{display:grid;grid-template-columns:280px 1fr;gap:0;border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--gray-200);background:var(--white);box-shadow:var(--shadow-sm);transition:box-shadow .2s,transform .2s;text-decoration:none}
+    .post-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
+    .post-card-img{width:100%;height:100%;min-height:200px;object-fit:cover;display:block}
+    .post-card-body{padding:28px 28px 24px}
+    .post-tag{display:inline-flex;align-items:center;font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:4px 12px;border-radius:100px;margin-bottom:12px}
+    .tag-red{background:var(--red-pale);color:var(--red)}
+    .tag-gold{background:var(--gold-pale);color:var(--gold-hover)}
+    .tag-blue{background:var(--blue-light);color:var(--blue-mid)}
+    .post-card-body h2{font-family:var(--font-display);font-size:1.25rem;color:var(--blue-deep);line-height:1.25;margin-bottom:10px}
+    .post-card-body p{font-size:.875rem;color:var(--text-light);line-height:1.7;margin-bottom:16px}
+    .post-meta{font-size:12px;color:var(--gray-400);display:flex;gap:14px}
+    .read-link{font-size:13px;font-weight:600;color:var(--blue-mid);margin-top:14px;display:inline-flex;align-items:center;gap:5px}
+    .read-link:hover{color:var(--blue-deep)}
+
+    /* SIDEBAR */
+    .blog-sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px}
+    .sidebar-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-md);overflow:hidden;box-shadow:var(--shadow-sm)}
+    .sidebar-accent{height:4px;background:linear-gradient(90deg,var(--gold),var(--blue-mid))}
+    .sidebar-body{padding:22px}
+    .sidebar-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-400);margin-bottom:10px}
+    .sidebar-price{font-family:var(--font-display);font-size:2.4rem;font-weight:700;color:var(--blue-deep);line-height:1}
+    .sidebar-price sup{font-size:1.2rem;vertical-align:top;margin-top:6px}
+    .sidebar-freq{font-size:12px;color:var(--text-light);margin:4px 0 16px}
+    .sidebar-feats{list-style:none;margin:0 0 18px;display:flex;flex-direction:column;gap:9px}
+    .sidebar-feats li{display:flex;gap:9px;align-items:flex-start;font-size:.8rem;color:var(--gray-600);line-height:1.5}
+    .sidebar-feats li::before{content:'✓';width:18px;height:18px;border-radius:50%;background:var(--gold-pale);color:var(--gold-hover);font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+    .sidebar-divider{height:1px;background:var(--gray-200);margin:16px 0}
+    .btn-sidebar{display:block;width:100%;background:var(--gold);color:white;text-align:center;font-weight:700;font-size:.9rem;padding:13px;border-radius:var(--radius-sm);text-decoration:none;box-shadow:0 3px 14px rgba(232,160,32,.35);transition:background .2s,transform .15s}
+    .btn-sidebar:hover{background:var(--gold-hover);transform:translateY(-1px)}
+    .sidebar-note{text-align:center;font-size:11px;color:var(--gray-400);margin-top:10px}
+
+    /* TOPICS SIDEBAR */
+    .topics-list{list-style:none;display:flex;flex-direction:column;gap:2px}
+    .topics-list li a{display:flex;align-items:center;justify-content:space-between;padding:10px 0;font-size:.875rem;color:var(--gray-600);border-bottom:1px solid var(--gray-200);transition:color .2s}
+    .topics-list li:last-child a{border-bottom:none}
+    .topics-list li a:hover{color:var(--blue-deep)}
+    .topic-arrow{font-size:12px;color:var(--gray-400)}
+
+    /* CTA BANNER */
+    .cta-banner{background:var(--blue-deep);padding:60px 2rem;text-align:center}
+    .cta-banner h2{font-family:var(--font-display);font-size:clamp(1.7rem,3vw,2.2rem);color:white;margin-bottom:12px}
+    .cta-banner p{font-size:.95rem;color:rgba(255,255,255,.65);max-width:480px;margin:0 auto 26px;line-height:1.7}
+    .btn-cta{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:white;font-weight:700;font-size:15px;padding:14px 28px;border-radius:var(--radius-sm);text-decoration:none;box-shadow:0 4px 18px rgba(232,160,32,.38);transition:background .2s,transform .15s}
+    .btn-cta:hover{background:var(--gold-hover);transform:translateY(-2px)}
+
+    /* FOOTER */
+    footer{background:var(--gray-800);color:rgba(255,255,255,.55);padding:40px 2rem 28px}
+    .footer-inner{max-width:1160px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:24px}
+    .footer-brand{font-family:var(--font-display);font-size:1rem;color:white;margin-bottom:8px}
+    .footer-disclaimer{font-size:.7rem;max-width:420px;line-height:1.6}
+    .footer-links{display:flex;gap:20px;flex-wrap:wrap}
+    .footer-links a{font-size:12px;color:rgba(255,255,255,.5);text-decoration:none}
+    .footer-links a:hover{color:white}
+    .footer-bottom{max-width:1160px;margin:20px auto 0;padding-top:18px;border-top:1px solid rgba(255,255,255,.07);font-size:11px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+    @media(max-width:900px){.blog-wrap{grid-template-columns:1fr}.blog-sidebar{display:none}.post-card{grid-template-columns:1fr}.post-card-img{height:200px}}
+    @media(max-width:640px){.nav-links{display:none}}
+  </style>
+</head>
+<body>
+
+<div class="alert-strip">⚠ <strong>ENFORCEMENT ALERT:</strong> OIG released two podiatry billing audits in Dec 2025 — non-compliance rates of 44–49%. Is your practice exposed?</div>
+
+<nav>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo"><div class="nav-logo-mark">🦶</div>PodiatryBillingClarity</a>
+      <div class="nav-links">
+        <a href="/#features">What You Get</a>
+        <a href="/#risk-codes">Risk Codes</a>
+        <a href="/#how-it-works">How It Works</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/blog/">Resources</a>
+      </div>
+      <a href="/#pricing" class="btn-nav">Subscribe — $247/mo</a>
+    </div>
+  </div>
+</nav>
+
+<div class="blog-hero">
+  <div class="blog-hero-inner">
+    <div class="blog-hero-label">Compliance Intelligence</div>
+    <h1>Medicare Billing Resources<br>for Podiatrists</h1>
+    <p>Expert guidance on OIG audit priorities, LCD updates, CPT code changes, and documentation requirements — written for independent podiatry practices.</p>
+  </div>
+</div>
+
+<div class="blog-wrap">
+  <div class="post-grid">
+
+    <a href="/blog/oig-podiatry-audit-2025/" class="post-card">
+      <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80&auto=format&fit=crop" alt="Medicare audit documentation review podiatry" class="post-card-img"/>
+      <div class="post-card-body">
+        <span class="post-tag tag-red">OIG Enforcement</span>
+        <h2>The 2025 OIG Podiatry Audit Reports: What Every Independent Podiatrist Must Know Now</h2>
+        <p>The OIG released two separate podiatry billing audits in December 2025 with non-compliance rates of 44% and 49%. Here's what triggered the failures and what to do immediately.</p>
+        <div class="post-meta"><span>📅 April 2026</span><span>⏱ 8 min read</span></div>
+        <div class="read-link">Read article →</div>
+      </div>
+    </a>
+
+    <a href="/blog/routine-foot-care-billing-rules/" class="post-card">
+      <img src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=600&q=80&auto=format&fit=crop" alt="Podiatrist reviewing patient foot care Medicare billing" class="post-card-img"/>
+      <div class="post-card-body">
+        <span class="post-tag tag-gold">LCD Requirements</span>
+        <h2>Routine Foot Care Medicare Billing Rules: CPT 11055–11057 and 11720–11721</h2>
+        <p>The Class Finding documentation requirement is the #1 audit failure in podiatry. Here's exactly what your chart notes need to include — and what auditors look for.</p>
+        <div class="post-meta"><span>📅 April 2026</span><span>⏱ 10 min read</span></div>
+        <div class="read-link">Read article →</div>
+      </div>
+    </a>
+
+    <a href="/blog/podiatry-lcd-requirements/" class="post-card">
+      <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&q=80&auto=format&fit=crop" alt="Medical practice reviewing LCD requirements documentation" class="post-card-img"/>
+      <div class="post-card-body">
+        <span class="post-tag tag-blue">LCD Updates</span>
+        <h2>Podiatry LCD Requirements: How Local Coverage Determinations Affect Your Billing</h2>
+        <p>Your MAC's LCD can change mid-year without direct notification to your practice. Here's how LCDs work, how to track changes, and what they mean for your highest-risk codes.</p>
+        <div class="post-meta"><span>📅 April 2026</span><span>⏱ 9 min read</span></div>
+        <div class="read-link">Read article →</div>
+      </div>
+    </a>
+
+    <a href="/blog/nail-debridement-cpt-11720-11721/" class="post-card">
+      <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=600&q=80&auto=format&fit=crop" alt="Podiatry nail debridement CPT code Medicare billing" class="post-card-img"/>
+      <div class="post-card-body">
+        <span class="post-tag tag-gold">CPT Codes</span>
+        <h2>Nail Debridement CPT 11720 vs 11721: Billing Rules, Nail Count Requirements, and Audit Risks</h2>
+        <p>Nail count discrepancies between your chart note and the CPT code billed are an automatic audit failure. Here's the complete guide to billing 11720 and 11721 correctly.</p>
+        <div class="post-meta"><span>📅 April 2026</span><span>⏱ 7 min read</span></div>
+        <div class="read-link">Read article →</div>
+      </div>
+    </a>
+
+    <a href="/blog/podiatry-medicare-compliance-checklist/" class="post-card">
+      <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=600&q=80&auto=format&fit=crop" alt="Podiatry Medicare compliance self-audit checklist" class="post-card-img"/>
+      <div class="post-card-body">
+        <span class="post-tag tag-red">Self-Audit</span>
+        <h2>Podiatry Medicare Compliance Self-Audit Checklist: 12 Things to Review Before the OIG Does</h2>
+        <p>A quarterly self-audit takes two hours and creates a defensible compliance record. Here are the 12 most important items to check — in priority order by audit risk.</p>
+        <div class="post-meta"><span>📅 April 2026</span><span>⏱ 6 min read</span></div>
+        <div class="read-link">Read article →</div>
+      </div>
+    </a>
+
+
+        <a href="/blog/11055-cpt-code-callus-paring/" class="post-card">
+          <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80&auto=format&fit=crop" alt="CPT 11055 callus paring podiatry billing" class="post-card-img"/>
+          <div class="post-card-body">
+            <span class="post-tag tag-gold">CPT Codes</span>
+            <h2>CPT Code 11055: Paring of Benign Hyperkeratotic Lesion (1 Lesion) Billing Guide</h2>
+            <p>CPT 11055 covers paring or cutting of a single corn or callus. Learn the lesion count requirements, documentation standards, and how to avoid common audit triggers.</p>
+            <div class="post-meta"><span>📅 April 2026</span><span>⏱ 6 min read</span></div>
+            <div class="read-link">Read article →</div>
+          </div>
+        </a>
+        <a href="/blog/11056-cpt-code-callus-removal/" class="post-card">
+          <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80&auto=format&fit=crop" alt="CPT 11056 callus removal 2-4 lesions podiatry billing" class="post-card-img"/>
+          <div class="post-card-body">
+            <span class="post-tag tag-gold">CPT Codes</span>
+            <h2>CPT Code 11056: Corn and Callus Removal (2–4 Lesions) Billing Guide</h2>
+            <p>CPT 11056 covers paring of 2–4 benign hyperkeratotic lesions. Learn the lesion count rules, documentation requirements, and how 11056 differs from 11055 and 11057.</p>
+            <div class="post-meta"><span>📅 April 2026</span><span>⏱ 6 min read</span></div>
+            <div class="read-link">Read article →</div>
+          </div>
+        </a>
+        <a href="/blog/11720-cpt-code-nail-trimming/" class="post-card">
+          <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=600&q=80&auto=format&fit=crop" alt="CPT 11720 nail trimming Medicare billing podiatry" class="post-card-img"/>
+          <div class="post-card-body">
+            <span class="post-tag tag-gold">CPT Codes</span>
+            <h2>CPT 11720: Nail Trimming Billing Guide (1–5 Nails)</h2>
+            <p>CPT 11720 covers debridement of nails for 1–5 nails. Learn the documentation requirements, mycosis vs. systemic condition pathways, and frequency limitations.</p>
+            <div class="post-meta"><span>📅 April 2026</span><span>⏱ 6 min read</span></div>
+            <div class="read-link">Read article →</div>
+          </div>
+        </a>
+        <a href="/blog/11721-cpt-code-nail-debridement/" class="post-card">
+          <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=600&q=80&auto=format&fit=crop" alt="CPT 11721 nail debridement 6+ nails Medicare billing" class="post-card-img"/>
+          <div class="post-card-body">
+            <span class="post-tag tag-gold">CPT Codes</span>
+            <h2>CPT 11721: Nail Debridement (6 or More Nails) Billing Guide</h2>
+            <p>CPT 11721 covers debridement of 6 or more nails. Learn nail count documentation, the coverage pathways, and how to avoid the most common audit failures for this high-volume code.</p>
+            <div class="post-meta"><span>📅 April 2026</span><span>⏱ 7 min read</span></div>
+            <div class="read-link">Read article →</div>
+          </div>
+        </a>
+        <a href="/blog/does-insurance-cover-podiatrist/" class="post-card">
+          <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&q=80&auto=format&fit=crop" alt="Insurance coverage podiatrist visit copay" class="post-card-img"/>
+          <div class="post-card-body">
+            <span class="post-tag tag-blue">Patient Resources</span>
+            <h2>Does Insurance Cover a Podiatrist? Coverage by Plan Type (2026)</h2>
+            <p>Most insurance plans cover medically necessary podiatry visits, but coverage details vary significantly. Learn how Medicare, Medicaid, and private insurance handle podiatry claims.</p>
+            <div class="post-meta"><span>📅 April 2026</span><span>⏱ 7 min read</span></div>
+            <div class="read-link">Read article →</div>
+          </div>
+        </a>
+        <a href="/blog/does-medicare-cover-foot-care/" class="post-card">
+          <img src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=600&q=80&auto=format&fit=crop" alt="Medicare foot care coverage routine vs medical" class="post-card-img"/>
+          <div class="post-card-body">
+            <span class="post-tag tag-blue">Medicare Coverage</span>
+            <h2>Does Medicare Cover Foot Care? Routine vs. Medical Explained (2026)</h2>
+            <p>Medicare doesn't cover routine foot care — but it does cover medically necessary foot services. Learn exactly what qualifies and what documentation you need.</p>
+            <div class="post-meta"><span>📅 April 2026</span><span>⏱ 8 min read</span></div>
+            <div class="read-link">Read article →</div>
+          </div>
+        </a>
+        <a href="/blog/does-medicare-cover-orthotics/" class="post-card">
+          <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80&auto=format&fit=crop" alt="Medicare coverage orthotics custom insoles podiatry" class="post-card-img"/>
+          <div class="post-card-body">
+            <span class="post-tag tag-blue">Medicare Coverage</span>
+            <h2>Does Medicare Cover Orthotics? What's Covered and What's Not (2026)</h2>
+            <p>Medicare Part B covers therapeutic shoes and inserts for diabetic patients, but custom orthotics have strict coverage rules. Learn the documentation requirements and billing codes.</p>
+            <div class="post-meta"><span>📅 April 2026</span><span>⏱ 8 min read</span></div>
+            <div class="read-link">Read article →</div>
+          </div>
+        </a>
+        <a href="/blog/does-medicare-cover-podiatry/" class="post-card">
+          <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=600&q=80&auto=format&fit=crop" alt="Medicare podiatry coverage complete guide 2026" class="post-card-img"/>
+          <div class="post-card-body">
+            <span class="post-tag tag-blue">Medicare Coverage</span>
+            <h2>Does Medicare Cover Podiatry? Complete Coverage Guide (2026)</h2>
+            <p>Medicare covers medically necessary podiatry services but not routine foot care. Learn what's covered, what requires documentation, and how to bill correctly.</p>
+            <div class="post-meta"><span>📅 April 2026</span><span>⏱ 8 min read</span></div>
+            <div class="read-link">Read article →</div>
+          </div>
+        </a>
+        <a href="/blog/how-much-does-a-podiatrist-cost/" class="post-card">
+          <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80&auto=format&fit=crop" alt="Podiatrist cost pricing visit fee out of pocket" class="post-card-img"/>
+          <div class="post-card-body">
+            <span class="post-tag tag-blue">Patient Resources</span>
+            <h2>How Much Does a Podiatrist Cost? Prices by Service Type (2026)</h2>
+            <p>Podiatrist visit costs range from $60 to $400+ depending on the service and insurance coverage. Learn typical prices, what affects cost, and how to reduce out-of-pocket expenses.</p>
+            <div class="post-meta"><span>📅 April 2026</span><span>⏱ 7 min read</span></div>
+            <div class="read-link">Read article →</div>
+          </div>
+        </a>
+        <a href="/blog/podiatry-cpt-codes-billing-reference/" class="post-card">
+          <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80&auto=format&fit=crop" alt="Podiatry CPT codes billing reference complete list" class="post-card-img"/>
+          <div class="post-card-body">
+            <span class="post-tag tag-gold">CPT Codes</span>
+            <h2>Podiatry CPT Codes: Complete Billing Reference Guide (2026)</h2>
+            <p>A complete reference guide to podiatry CPT codes including routine foot care, nail care, callus removal, and surgical codes with Medicare billing requirements.</p>
+            <div class="post-meta"><span>📅 April 2026</span><span>⏱ 10 min read</span></div>
+            <div class="read-link">Read article →</div>
+          </div>
+        </a>
+
+  </div>
+
+  <!-- SIDEBAR -->
+  <aside class="blog-sidebar">
+    <div class="sidebar-card">
+      <div class="sidebar-accent"></div>
+      <div class="sidebar-body">
+        <div class="sidebar-label">Monthly Compliance Plan</div>
+        <div class="sidebar-price"><sup>$</sup>247</div>
+        <div class="sidebar-freq">per month · cancel anytime</div>
+        <ul class="sidebar-feats">
+          <li>LCD update monitoring</li>
+          <li>OIG audit priority briefing</li>
+          <li>CPT code change alerts</li>
+          <li>Documentation requirements</li>
+          <li>Enforcement action summaries</li>
+          <li>One action item per report</li>
+        </ul>
+        <div class="sidebar-divider"></div>
+        <a href="/#pricing" class="btn-sidebar">Subscribe Now — $247/mo</a>
+        <div class="sidebar-note">🔒 Secure via Stripe · Cancel anytime</div>
+      </div>
+    </div>
+
+    <div class="sidebar-card">
+      <div class="sidebar-body">
+        <div class="sidebar-label">Browse by Topic</div>
+        <ul class="topics-list">
+          <li><a href="/blog/oig-podiatry-audit-2025/">OIG Enforcement <span class="topic-arrow">›</span></a></li>
+          <li><a href="/blog/routine-foot-care-billing-rules/">Routine Foot Care <span class="topic-arrow">›</span></a></li>
+          <li><a href="/blog/podiatry-lcd-requirements/">LCD Requirements <span class="topic-arrow">›</span></a></li>
+          <li><a href="/blog/nail-debridement-cpt-11720-11721/">CPT Code Billing <span class="topic-arrow">›</span></a></li>
+          <li><a href="/blog/podiatry-medicare-compliance-checklist/">Self-Audit Tools <span class="topic-arrow">›</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<div class="cta-banner">
+  <h2>Know what changed before the audit arrives</h2>
+  <p>Monthly compliance intelligence for independent podiatrists. $247/month — cancel anytime.</p>
+  <a href="/#pricing" class="btn-cta">Subscribe to PodiatryBillingClarity <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div><div class="footer-brand">🦶 PodiatryBillingClarity</div><div class="footer-disclaimer">General compliance information only. Not legal advice. © 2026 PodiatryBillingClarity.com</div></div>
+    <div class="footer-links"><a href="/">Home</a><a href="/blog/">Blog</a><a href="/#pricing">Subscribe</a><a href="mailto:hello@podiatrybillingclarity.com">Contact</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 PodiatryBillingClarity.com</span><span>Not affiliated with OIG, CMS, APMA, or any government agency.</span></div>
+</footer>
+
+</body>
+</html>
