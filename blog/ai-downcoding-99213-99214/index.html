@@ -7,12 +7,10 @@
 <meta name="description" content="Insurers are using AI to downcode podiatry E/M visits from 99214 to 99213 — paying you less without ever denying the claim. Here's how to detect, appeal, and protect your practice.">
 <meta name="keywords" content="99213 vs 99214, podiatry E/M downcoding, AI downcoding, podiatry billing, insurance underpayment, podiatry reimbursement">
 <link rel="canonical" href="https://podiatrybillingclarity.com/blog/ai-downcoding-99213-99214/">
-
 <meta property="og:title" content="99213 vs 99214: When AI Downcoding Quietly Cuts Your Podiatry Reimbursement">
 <meta property="og:description" content="Insurers are using AI to downcode podiatry E/M visits from 99214 to 99213. Here's how to detect, appeal, and protect your practice.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://podiatrybillingclarity.com/blog/ai-downcoding-99213-99214/">
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -53,417 +51,110 @@
   ]
 }
 </script>
-
 <style>
-  :root {
-    --navy: #0a1628;
-    --navy-deep: #050d1a;
-    --navy-card: #0f1d33;
-    --amber: #f4a934;
-    --amber-bright: #ffc25c;
-    --cream: #f5efe6;
-    --text-primary: #f5efe6;
-    --text-secondary: #b8c4d6;
-    --text-muted: #7a8699;
-    --border: rgba(244, 169, 52, 0.15);
-    --border-strong: rgba(244, 169, 52, 0.35);
-  }
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  body {
-    font-family: 'Georgia', 'Cambria', serif;
-    background: var(--navy);
-    color: var(--text-primary);
-    line-height: 1.7;
-    font-size: 17px;
-  }
-
-  .nav {
-    border-bottom: 1px solid var(--border);
-    background: var(--navy-deep);
-    padding: 1.25rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    backdrop-filter: blur(12px);
-  }
-
-  .nav-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .brand {
-    font-family: 'Georgia', serif;
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--cream);
-    text-decoration: none;
-    letter-spacing: -0.01em;
-  }
-
-  .brand em {
-    color: var(--amber);
-    font-style: italic;
-  }
-
-  .nav-cta {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 0.875rem;
-    color: var(--amber);
-    text-decoration: none;
-    border: 1px solid var(--border-strong);
-    padding: 0.5rem 1.25rem;
-    border-radius: 4px;
-    transition: all 0.2s;
-    letter-spacing: 0.02em;
-  }
-
-  .nav-cta:hover {
-    background: var(--amber);
-    color: var(--navy);
-  }
-
-  .article {
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 4rem 2rem;
-  }
-
-  .eyebrow {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.18em;
-    color: var(--amber);
-    margin-bottom: 1.5rem;
-    font-weight: 500;
-  }
-
-  h1 {
-    font-family: 'Georgia', serif;
-    font-size: clamp(2rem, 5vw, 3rem);
-    line-height: 1.15;
-    font-weight: 600;
-    color: var(--cream);
-    margin-bottom: 1.5rem;
-    letter-spacing: -0.02em;
-  }
-
-  .meta {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 0.875rem;
-    color: var(--text-muted);
-    margin-bottom: 3rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .tldr {
-    background: linear-gradient(135deg, rgba(244, 169, 52, 0.08), rgba(244, 169, 52, 0.03));
-    border: 1px solid var(--border-strong);
-    border-left: 4px solid var(--amber);
-    padding: 1.75rem 2rem;
-    margin: 2rem 0 3rem;
-    border-radius: 4px;
-  }
-
-  .tldr-label {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    color: var(--amber);
-    margin-bottom: 0.75rem;
-    font-weight: 600;
-  }
-
-  .tldr p {
-    color: var(--text-primary);
-    font-size: 1.05rem;
-    line-height: 1.6;
-  }
-
-  h2 {
-    font-family: 'Georgia', serif;
-    font-size: 1.75rem;
-    line-height: 1.25;
-    font-weight: 600;
-    color: var(--cream);
-    margin: 3rem 0 1.25rem;
-    letter-spacing: -0.01em;
-  }
-
-  h3 {
-    font-family: 'Georgia', serif;
-    font-size: 1.25rem;
-    line-height: 1.35;
-    font-weight: 600;
-    color: var(--amber-bright);
-    margin: 2rem 0 1rem;
-  }
-
-  p {
-    margin-bottom: 1.25rem;
-    color: var(--text-secondary);
-  }
-
-  p strong {
-    color: var(--cream);
-    font-weight: 600;
-  }
-
-  ul, ol {
-    margin: 1.25rem 0 1.5rem 1.5rem;
-    color: var(--text-secondary);
-  }
-
-  li {
-    margin-bottom: 0.6rem;
-  }
-
-  .callout {
-    background: var(--navy-card);
-    border: 1px solid var(--border);
-    padding: 1.5rem 1.75rem;
-    margin: 2rem 0;
-    border-radius: 4px;
-  }
-
-  .callout-label {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    color: var(--amber);
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-  }
-
-  .callout p:last-child {
-    margin-bottom: 0;
-  }
-
-  .comparison-table {
-    width: 100%;
-    margin: 2rem 0;
-    border-collapse: collapse;
-    background: var(--navy-card);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    overflow: hidden;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 0.95rem;
-  }
-
-  .comparison-table th {
-    background: var(--navy-deep);
-    color: var(--amber);
-    font-weight: 600;
-    text-align: left;
-    padding: 1rem 1.25rem;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    border-bottom: 1px solid var(--border-strong);
-  }
-
-  .comparison-table td {
-    padding: 0.875rem 1.25rem;
-    border-bottom: 1px solid var(--border);
-    color: var(--text-secondary);
-  }
-
-  .comparison-table tr:last-child td {
-    border-bottom: none;
-  }
-
-  .comparison-table td:first-child {
-    color: var(--cream);
-    font-weight: 500;
-  }
-
-  blockquote {
-    border-left: 3px solid var(--amber);
-    padding: 0.5rem 0 0.5rem 1.5rem;
-    margin: 2rem 0;
-    font-style: italic;
-    color: var(--text-primary);
-    font-size: 1.1rem;
-  }
-
-  .cta-block {
-    background: linear-gradient(135deg, var(--navy-card), var(--navy-deep));
-    border: 1px solid var(--border-strong);
-    padding: 2.5rem;
-    margin: 4rem 0 2rem;
-    border-radius: 6px;
-    text-align: center;
-  }
-
-  .cta-block h3 {
-    color: var(--cream);
-    font-size: 1.5rem;
-    margin-bottom: 0.75rem;
-    margin-top: 0;
-  }
-
-  .cta-block p {
-    color: var(--text-secondary);
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
-  }
-
-  .cta-button {
-    display: inline-block;
-    background: var(--amber);
-    color: var(--navy);
-    padding: 0.875rem 2rem;
-    text-decoration: none;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 0.95rem;
-    font-weight: 600;
-    border-radius: 4px;
-    letter-spacing: 0.02em;
-    transition: all 0.2s;
-  }
-
-  .cta-button:hover {
-    background: var(--amber-bright);
-    transform: translateY(-1px);
-  }
-
-  .related {
-    margin-top: 4rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--border);
-  }
-
-  .related h4 {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.18em;
-    color: var(--amber);
-    margin-bottom: 1rem;
-    font-weight: 600;
-  }
-
-  .related a {
-    color: var(--text-primary);
-    text-decoration: none;
-    border-bottom: 1px solid var(--border-strong);
-    transition: all 0.2s;
-  }
-
-  .related a:hover {
-    color: var(--amber);
-    border-bottom-color: var(--amber);
-  }
-
-  .footer {
-    background: var(--navy-deep);
-    border-top: 1px solid var(--border);
-    padding: 3rem 2rem;
-    margin-top: 4rem;
-    text-align: center;
-  }
-
-  .footer p {
-    color: var(--text-muted);
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 0.85rem;
-    margin: 0.5rem 0;
-  }
-
-  .footer a {
-    color: var(--amber);
-    text-decoration: none;
-  }
-
-  .disclaimer {
-    font-size: 0.8rem;
-    color: var(--text-muted);
-    font-family: 'Helvetica Neue', sans-serif;
-    line-height: 1.6;
-    max-width: 600px;
-    margin: 1.5rem auto 0;
-  }
-
-  @media (max-width: 768px) {
-    .article { padding: 3rem 1.5rem; }
-    h1 { font-size: 2rem; }
-    h2 { font-size: 1.5rem; }
-    .tldr, .callout, .cta-block { padding: 1.5rem; }
-    .comparison-table { font-size: 0.85rem; }
-    .comparison-table th, .comparison-table td { padding: 0.75rem; }
-  }
+:root {
+  --navy: #0a1628;
+  --navy-deep: #050d1a;
+  --navy-card: #0f1d33;
+  --amber: #f4a934;
+  --amber-bright: #ffc25c;
+  --cream: #f5efe6;
+  --text-primary: #f5efe6;
+  --text-secondary: #b8c4d6;
+  --text-muted: #7a8699;
+  --border: rgba(244, 169, 52, 0.15);
+  --border-strong: rgba(244, 169, 52, 0.35);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Georgia', 'Cambria', serif; background: var(--navy); color: var(--text-primary); line-height: 1.7; font-size: 17px; }
+.nav { border-bottom: 1px solid var(--border); background: var(--navy-deep); padding: 1.25rem 0; position: sticky; top: 0; z-index: 100; backdrop-filter: blur(12px); }
+.nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; }
+.brand { font-family: 'Georgia', serif; font-size: 1.25rem; font-weight: 600; color: var(--cream); text-decoration: none; letter-spacing: -0.01em; }
+.brand em { color: var(--amber); font-style: italic; }
+.nav-cta { font-family: 'Helvetica Neue', sans-serif; font-size: 0.875rem; color: var(--amber); text-decoration: none; border: 1px solid var(--border-strong); padding: 0.5rem 1.25rem; border-radius: 4px; transition: all 0.2s; letter-spacing: 0.02em; }
+.nav-cta:hover { background: var(--amber); color: var(--navy); }
+.article { max-width: 760px; margin: 0 auto; padding: 4rem 2rem; }
+.eyebrow { font-family: 'Helvetica Neue', sans-serif; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--amber); margin-bottom: 1.5rem; font-weight: 500; }
+h1 { font-family: 'Georgia', serif; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.15; font-weight: 600; color: var(--cream); margin-bottom: 1.5rem; letter-spacing: -0.02em; }
+.meta { font-family: 'Helvetica Neue', sans-serif; font-size: 0.875rem; color: var(--text-muted); margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
+.tldr { background: linear-gradient(135deg, rgba(244, 169, 52, 0.08), rgba(244, 169, 52, 0.03)); border: 1px solid var(--border-strong); border-left: 4px solid var(--amber); padding: 1.75rem 2rem; margin: 2rem 0 3rem; border-radius: 4px; }
+.tldr-label { font-family: 'Helvetica Neue', sans-serif; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--amber); margin-bottom: 0.75rem; font-weight: 600; }
+.tldr p { color: var(--text-primary); font-size: 1.05rem; line-height: 1.6; }
+h2 { font-family: 'Georgia', serif; font-size: 1.75rem; line-height: 1.25; font-weight: 600; color: var(--cream); margin: 3rem 0 1.25rem; letter-spacing: -0.01em; }
+h3 { font-family: 'Georgia', serif; font-size: 1.25rem; line-height: 1.35; font-weight: 600; color: var(--amber-bright); margin: 2rem 0 1rem; }
+p { margin-bottom: 1.25rem; color: var(--text-secondary); }
+p strong { color: var(--cream); font-weight: 600; }
+ul, ol { margin: 1.25rem 0 1.5rem 1.5rem; color: var(--text-secondary); }
+li { margin-bottom: 0.6rem; }
+.callout { background: var(--navy-card); border: 1px solid var(--border); padding: 1.5rem 1.75rem; margin: 2rem 0; border-radius: 4px; }
+.callout-label { font-family: 'Helvetica Neue', sans-serif; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--amber); margin-bottom: 0.5rem; font-weight: 600; }
+.callout p:last-child { margin-bottom: 0; }
+.comparison-table { width: 100%; margin: 2rem 0; border-collapse: collapse; background: var(--navy-card); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; font-family: 'Helvetica Neue', sans-serif; font-size: 0.95rem; }
+.comparison-table th { background: var(--navy-deep); color: var(--amber); font-weight: 600; text-align: left; padding: 1rem 1.25rem; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; border-bottom: 1px solid var(--border-strong); }
+.comparison-table td { padding: 0.875rem 1.25rem; border-bottom: 1px solid var(--border); color: var(--text-secondary); }
+.comparison-table tr:last-child td { border-bottom: none; }
+.comparison-table td:first-child { color: var(--cream); font-weight: 500; }
+blockquote { border-left: 3px solid var(--amber); padding: 0.5rem 0 0.5rem 1.5rem; margin: 2rem 0; font-style: italic; color: var(--text-primary); font-size: 1.1rem; }
+.cta-block { background: linear-gradient(135deg, var(--navy-card), var(--navy-deep)); border: 1px solid var(--border-strong); padding: 2.5rem; margin: 4rem 0 2rem; border-radius: 6px; text-align: center; }
+.cta-block h3 { color: var(--cream); font-size: 1.5rem; margin-bottom: 0.75rem; margin-top: 0; }
+.cta-block p { color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 1rem; }
+.cta-button { display: inline-block; background: var(--amber); color: var(--navy); padding: 0.875rem 2rem; text-decoration: none; font-family: 'Helvetica Neue', sans-serif; font-size: 0.95rem; font-weight: 600; border-radius: 4px; letter-spacing: 0.02em; transition: all 0.2s; }
+.cta-button:hover { background: var(--amber-bright); transform: translateY(-1px); }
+.related { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+.related h4 { font-family: 'Helvetica Neue', sans-serif; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--amber); margin-bottom: 1rem; font-weight: 600; }
+.related a { color: var(--text-primary); text-decoration: none; border-bottom: 1px solid var(--border-strong); transition: all 0.2s; }
+.related a:hover { color: var(--amber); border-bottom-color: var(--amber); }
+.footer { background: var(--navy-deep); border-top: 1px solid var(--border); padding: 3rem 2rem; margin-top: 4rem; text-align: center; }
+.footer p { color: var(--text-muted); font-family: 'Helvetica Neue', sans-serif; font-size: 0.85rem; margin: 0.5rem 0; }
+.footer a { color: var(--amber); text-decoration: none; }
+.disclaimer { font-size: 0.8rem; color: var(--text-muted); font-family: 'Helvetica Neue', sans-serif; line-height: 1.6; max-width: 600px; margin: 1.5rem auto 0; }
+@media (max-width: 768px) {
+  .article { padding: 3rem 1.5rem; }
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  .tldr, .callout, .cta-block { padding: 1.5rem; }
+  .comparison-table { font-size: 0.85rem; }
+  .comparison-table th, .comparison-table td { padding: 0.75rem; }
+}
 </style>
 </head>
 <body>
-
 <nav class="nav">
   <div class="nav-inner">
     <a href="/" class="brand">Podiatry Billing <em>Clarity</em></a>
     <a href="/#pricing" class="nav-cta">Subscribe</a>
   </div>
 </nav>
-
 <article class="article">
-
   <div class="eyebrow">Billing Intelligence · April 2026</div>
-
   <h1>99213 vs 99214: When AI Downcoding Quietly Cuts Your Podiatry Reimbursement</h1>
-
   <div class="meta">10 min read · For independent podiatrists and practice managers</div>
-
   <div class="tldr">
     <div class="tldr-label">Quick Answer</div>
     <p>Insurers are using AI claim-review systems to silently downcode podiatry visits from 99214 (Level 4 E/M, moderate complexity) to 99213 (Level 3, low-to-moderate) — a roughly 50% reimbursement reduction per visit. The claim isn't denied, just paid at a lower rate, which makes detection difficult without a systematic ERA audit. The American Academy of Family Physicians called for a federal investigation in 2026, and several state legislatures introduced AI downcoding transparency bills. Independent podiatrists can respond by auditing ERAs for billed-vs-paid CPT mismatches, building documentation that explicitly maps to 99214 medical decision-making criteria, and submitting batch appeals when systematic patterns emerge.</p>
   </div>
-
   <p>You see a diabetic patient with a non-healing forefoot ulcer, peripheral neuropathy, and uncontrolled A1C. You assess the wound, debride callus around it, adjust the dressing protocol, prescribe antibiotic therapy, document changes to their offloading plan, and coordinate care with their endocrinologist. By any reasonable reading of the 2021 E/M guidelines, that's a 99214 — moderate complexity, multiple chronic conditions, prescription drug management, moderate risk.</p>
-
   <p>You bill 99214. The claim doesn't get denied. The patient's insurance pays you. You move on to the next patient. Three weeks later, looking at your monthly EOB summary, you notice something off. The 99214 was paid at the 99213 rate. No denial. No request for documentation. No notice. Just a quiet adjustment — about $45 less than you billed for, depending on the payer.</p>
-
   <p>Now multiply that by every diabetic foot care visit, every complex wound check, every post-surgical follow-up where the AI doesn't see what your documentation shows. That's AI downcoding, and in 2026 it became one of the largest silent revenue leaks in independent podiatry.</p>
-
   <h2>What downcoding is — and why it's different from a denial</h2>
-
   <p>Downcoding is when an insurer processes a claim at a lower CPT code than what was submitted. The claim is paid, just at a reduced rate. It's distinct from a denial in three ways that matter:</p>
-
   <ul>
     <li><strong>It doesn't trigger a denial report.</strong> Your billing software shows the claim as "paid" — the discrepancy is buried in the payment amount, not the status field.</li>
     <li><strong>It doesn't trigger a documentation request.</strong> The payer isn't asking you to prove anything. They've already decided.</li>
     <li><strong>It compounds silently.</strong> Without a systematic audit, a practice can lose tens of thousands of dollars over a year and never see a single line item flagged for review.</li>
   </ul>
-
   <p>The most common pattern in podiatry is <strong>99214 paid as 99213</strong>, but it shows up across other codes too — particularly when an E/M is billed with a procedure code on the same day (modifier 25 cases), where AI tools frequently flag the E/M as not separately significant.</p>
-
   <h2>Why podiatry is hit harder than other specialties</h2>
-
   <p>Three structural factors make podiatry an unusually frequent target.</p>
-
   <p><strong>Medicare's "at-risk" foot care framework set the cultural template.</strong> Medicare has long applied tight scrutiny to routine foot care (CPT 11055-11057, 11719-11721) — covering it only when the patient has documented systemic conditions like diabetes with peripheral neuropathy, PAD, or specific qualifying diagnoses. Commercial AI tools picked up on this pattern and now apply similar scrutiny to E/M coding decisions in podiatry, even where the commercial contract doesn't impose those rules explicitly.</p>
-
   <p><strong>The procedure-plus-E/M pattern is common.</strong> Podiatrists routinely bill an E/M with a procedure on the same day — for example, 99213 or 99214 with 11042 (debridement) or 11721 (nail debridement). Modifier 25 is supposed to indicate the E/M was separately significant. AI tools are aggressive about flagging modifier 25 use, and a flagged claim often comes back as either a denied E/M or a downcoded one.</p>
-
   <p><strong>Documentation often runs lean on chronic conditions.</strong> Many podiatry notes focus on the foot complaint and underweight the systemic context — diabetes management, anticoagulant therapy, cardiovascular risk — that justifies higher complexity. AI tools read that as low-complexity care. The visit was 99214-worthy clinically, but the note reads like 99213.</p>
-
   <div class="callout">
     <div class="callout-label">The Pattern in Plain Numbers</div>
     <p>A solo podiatrist seeing 18 established patients per day, with roughly 40% billed as 99214, is at risk for ~7 downcoded visits per day if the payer's AI is aggressive. At ~$45 reimbursement difference per downcoded visit, that's <strong>$315 per day, or roughly $75,000 per year</strong> in revenue earned but never received. Even a 25% downcoding rate represents real annual losses in the high four figures.</p>
   </div>
-
   <h2>What 99214 actually requires (and how to document it)</h2>
-
   <p>Under the 2021 E/M guideline revisions, 99214 is determined by either total time (30-39 minutes on the date of encounter) or medical decision-making (MDM) of moderate complexity. For podiatry, the MDM pathway is usually stronger. Moderate MDM requires meeting two of three elements:</p>
-
   <table class="comparison-table">
     <thead>
       <tr>
@@ -486,60 +177,41 @@
       </tr>
     </tbody>
   </table>
-
   <p>The fastest documentation upgrade most podiatry practices can make: <strong>explicitly name the chronic conditions you're managing in every diabetic foot care note</strong>. Don't just say "diabetic patient" — say "Type 2 diabetes with peripheral neuropathy and stage 2 chronic kidney disease, both stable but contributing to wound healing risk." That's 99214-grade language. Most AI claim reviewers do exactly enough natural language processing to recognize it.</p>
-
   <h2>How to detect AI downcoding in your own practice</h2>
-
   <p>The data lives in your ERAs (Electronic Remittance Advice). What you need is a comparison: what CPT did you submit, and what CPT did the payer actually pay?</p>
-
   <h3>The 30-minute audit</h3>
-
   <ol>
     <li>Pull your last 90 days of ERAs for one payer at a time. Most podiatry-friendly EHRs (eClinicalWorks, ModMed, NextGen) export this directly.</li>
     <li>Filter to E/M lines (CPT codes 99211-99215). Look for both the "billed CPT" and "paid CPT" fields.</li>
     <li>Count any row where billed CPT ≠ paid CPT. That's your raw downcoding count.</li>
     <li>Calculate the percentage of 99214s billed that were paid as 99213. Above 10% is a pattern. Above 20% is systematic.</li>
   </ol>
-
   <p>Run this for your top 3-5 commercial payers and your Medicare Advantage plans separately. You'll often find one or two payers driving most of the loss while others pay clean. That gives you targets — both for appeals and for renegotiation.</p>
-
   <h2>How to appeal a downcoded podiatry E/M</h2>
-
   <p>Most payers have a 60-180 day appeal window from the date of the EOB. Three things make appeals win:</p>
-
   <ul>
     <li><strong>Documentation that maps directly to 99214 MDM criteria.</strong> Highlight which two of the three elements were met. Don't make the reviewer hunt.</li>
     <li><strong>Reference to the payer's own published medical policy.</strong> If they have a posted E/M policy, quote it. Their AI is supposed to follow it — making them prove it did is your strongest leverage.</li>
     <li><strong>Pattern documentation in the cover letter.</strong> Don't appeal as if this is a one-off. State explicitly: "Our practice has identified a pattern of [N] downcoded 99214 claims to [Payer] over the past [period], totaling $[amount] in unrecovered revenue."</li>
   </ul>
-
   <p>Single-claim appeals are rarely worth the time investment on their own. The leverage comes from <strong>batch appeals</strong> — submitting 20+ downcoded claims at once with a cover letter that documents the systematic pattern. Payers respond to systematic-pattern appeals because they signal regulatory risk.</p>
-
   <h2>The bigger picture for 2026</h2>
-
   <p>The legislative landscape is moving but unevenly. Several state bills proposed in 2026 would require payers to disclose every claim where AI was involved in adjudication; others would create a private right of action for systematic downcoding. None have become law yet. What's more likely in the next 6-12 months:</p>
-
   <ul>
     <li><strong>State insurance commissioner investigations</strong> after enough provider complaints. Several states have signaled this.</li>
     <li><strong>Class action lawsuits</strong> from physician groups and billing companies. Multiple cases were filed in 2025-2026.</li>
     <li><strong>Quiet payer policy adjustments.</strong> Payers tend to retune AI thresholds without announcement when pressure builds. The only reliable detection is monitoring your reimbursement patterns over time.</li>
   </ul>
-
   <p>None of that helps a podiatry practice getting downcoded today. What helps today is detection, documentation upgrades, and batch appeals where the pattern is severe.</p>
-
   <h2>The flip side worth knowing about</h2>
-
   <p>AI downcoding by payers is the mirror image of AI upcoding by health systems — where hospitals use AI tools to push claims toward higher-paying codes. Both use similar technology. Both extract margin from the system. Independent podiatry practices sit between the two pressures: they don't have the AI tools that large systems use to push codes up, but they're absorbing the AI tools commercial payers use to push codes down. The only available defense is regular monitoring of your own reimbursement data, claim-by-claim, payer-by-payer.</p>
-
   <p>The practices that catch this in 2026 are the ones treating ERA data as something to read, not just file.</p>
-
   <div class="cta-block">
     <h3>Monthly compliance intelligence for independent podiatrists</h3>
     <p>OIG enforcement priorities, payer policy changes, downcoding patterns, and one prioritized action item — delivered to your inbox on the 1st of every month. Less than the cost of a single downcoded visit.</p>
     <a href="/#pricing" class="cta-button">See Pricing →</a>
   </div>
-
   <div class="related">
     <h4>Related Reading</h4>
     <p>
@@ -548,13 +220,10 @@
       <a href="/blog/modifier-25-podiatry-em-procedure/">Modifier 25 for podiatry: when E/M and procedure are separately payable</a>
     </p>
   </div>
-
 </article>
-
 <footer class="footer">
   <p><a href="/">PodiatryBillingClarity</a> · Monthly billing intelligence for independent podiatrists</p>
   <p class="disclaimer">This content provides educational information about billing rules, payer policies, and regulatory enforcement. It is not legal, billing, or coding advice. For specific claim disputes, consult a qualified healthcare attorney or certified medical biller.</p>
 </footer>
-
 </body>
 </html>
